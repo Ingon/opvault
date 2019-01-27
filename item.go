@@ -88,6 +88,10 @@ type Item struct {
 	overview dataMap
 }
 
+func (i *Item) UUID() string {
+	return i.overview.getString("uuid")
+}
+
 func (i *Item) Category() ItemCategory {
 	return ItemCategory(i.data.getString("category"))
 }
