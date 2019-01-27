@@ -89,7 +89,7 @@ type Item struct {
 }
 
 func (i *Item) UUID() string {
-	return i.overview.getString("uuid")
+	return i.data.getString("uuid")
 }
 
 func (i *Item) Category() ItemCategory {
